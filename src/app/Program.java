@@ -18,7 +18,7 @@ public class Program {
 		ResultSet rs = st.executeQuery("select * from tb_product");
 			
 		while (rs.next()) {
-			System.out.println(rs.getInt("Id") + ", " + rs.getString("Name"));
+			System.out.println(rs.getLong("Id") + ", " + rs.getString("Name"));
 		}
 	}
 }
